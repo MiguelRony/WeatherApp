@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <nav>
+                <img src="" alt="weather img">
+                <div id="searchSection">
+                    <form autocomplete="off">
+                        <input type="text" name="search" id="search" placeholder="Search for a city">
+                        <button id="searchBtn" type="submit">Search</button>
+                    </form>
+                </div>
+                <button id="dimension">°C</button>
+            </nav>
+        </header>
+        <div id="results">
+            <div id="overlay"></div>
+            <div id="weatherContainer" >
+                <div class="weatherItem" id="tempContainer">
+                    <h5>Temperature</h5>
+                    <p id="temp"></p>
+                </div>
+                <div class="weatherItem">
+                    <h5>Conditions</h5>
+                    <p id="conditionsText"></p>
+                </div>
+                <div class="weatherItem">
+                    <h5>Humidity</h5>
+                    <p id="humidity"></p>
+                </div>
+                <div class="weatherItem">
+                    <h5>Description</h5>
+                    <p id="description"></p>
+                </div>
+                <div class="weatherItem">
+                    <h5>Feelslike</h5>
+                    <p id="sensation"></p>
+                </div>
+                <div class="weatherItem">
+                    <h5>Address</h5>
+                    <p id="resolvedAddress"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
